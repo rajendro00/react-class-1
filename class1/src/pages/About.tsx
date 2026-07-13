@@ -1,3 +1,5 @@
+import { use } from "react";
+
 const categories = [
   "HTML",
   "CSS",
@@ -6,16 +8,27 @@ const categories = [
   "Node"
 ];
 
+const users = [
+  { id: 1, name: "Rahim", active: true },
+  { id: 2, name: "Karim", active: false },
+  { id: 3, name: "Hasan", active: true },
+  { id: 4, name: "Sakib", active: false },
+];
+
 
 function About(){
+    
     return(
-        <ul>
-            {categories.map(category => (
-                <li key={category}>
-                    {category}
-                    </li>
-            ))}
-        </ul>
+        <>
+        {users
+            .filter(user => user.active)
+            .map(value => (
+                <ul>
+                    <li key={value.id}>{value.name}</li>
+                </ul>
+            ))
+        }
+        </>
     )
 }
 
