@@ -11,6 +11,8 @@ export default function Header() {
     { id: 6, name: "FAQ", path: "/faq" },
   ];
 
+  
+
   return (
     <header className="sticky top-0 z-50 bg-[#F5F7FA]  ">
       <div className="mx-auto flex h-[84px] w-full max-w-[1152px] items-center justify-between">
