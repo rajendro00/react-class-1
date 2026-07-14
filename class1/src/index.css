@@ -109,6 +109,15 @@ code {
   padding: 4px 8px;
   background: var(--code-bg);
 } */
+
+.swiper-pagination-bullet{
+    background:#4CAF4F !important;
+    opacity:.3;
+}
+
+.swiper-pagination-bullet-active{
+    opacity:1;
+}
 @import "tailwindcss";
 @tailwind base;
 @tailwind components;

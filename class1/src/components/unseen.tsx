@@ -69,9 +69,6 @@ export default function Unseen(){
                         ))}
                     </div>
                 </div>
-
-                {/* How to design your site footer like we did */}
-                
             </div>
         </section>
     )
