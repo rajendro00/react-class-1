@@ -1,12 +1,12 @@
 // import { use } from "react";
 
-const categories = [
-  "HTML",
-  "CSS",
-  "JavaScript",
-  "React",
-  "Node"
-];
+// const categories = [
+//   "HTML",
+//   "CSS",
+//   "JavaScript",
+//   "React",
+//   "Node"
+// ];
 
 const users = [
   { id: 1, name: "Rahim", active: true },
