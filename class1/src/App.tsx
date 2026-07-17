@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import MainLayout from "./Layouts/mainlayout";
 import Home from './pages/Home'
-import About from './pages/About'
+import Service from './pages/Service'
 import Gallery from './pages/Gallery'
 import Services from './pages/Services'
 import Blog from './pages/Blog'
@@ -15,7 +15,7 @@ function App() {
         <Routes>
           <Route element={<MainLayout/>}>
             <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
+            <Route path="/service" element={<Service />} />
             <Route path="/gallery" element={<Gallery />} />
             <Route path="/services" element={<Services />} />
             <Route path="/blog" element={<Blog />} />
