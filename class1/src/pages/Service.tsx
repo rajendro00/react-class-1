@@ -18,41 +18,35 @@ function About(){
 
     return(
         <>
-            <div className="flex items-center justify-center bg-gray-100 py-8">
-                <div className="w-80 rounded-2xl bg-white p-4 text-center shadow-xl">
-                    <h1 className="mb-8 text-6xl font-bold text-blue-600">
-                    {count}
-                    </h1>
-
-                    <div className="flex justify-center gap-4">
+            <div className="flex items-center justify-center  py-8">
                     <button
                         onClick={handleClick}
-                        className=" bg-green-500 px-6 py-3 text-xl font-bold text-white"
+                        className=" bg-green-500 px-6 py-3 text-xl font-bold text-white text-center"
                     >
-                        +
+                        click value {count} time
                     </button>
-
-                    </div>
                 </div>
-            </div>
             <List items={listData} />
-            <div className=" flex flex-wrap justify-center gap-4 ">
-                <Card
-            cardTitle ="Card Title" 
-            cardDescription = "This is the card description"
-            cardImage = {cardimage}
-            imageAlt = "Description of the Image"
-            /><Card
-            cardTitle ="Card Title" 
-            cardDescription = "This is the card description"
-            cardImage = {cardimage}
-            imageAlt = "Description of the Image"
-            /><Card
-            cardTitle ="Card Title" 
-            cardDescription = "This is the card description"
-            cardImage = {cardimage}
-            imageAlt = "Description of the Image"
-            />
+            <div className="bg-blue-200 py-12">
+                <div className=" flex flex-wrap justify-center gap-4 ">
+                    <Card
+                    cardTitle ="Card Title" 
+                    cardDescription = "This is the card description"
+                    cardImage = {cardimage}
+                    imageAlt = "Description of the Image"
+                    />
+                    <Card
+                    cardTitle ="Card Title" 
+                    cardDescription = "This is the card description"
+                    cardImage = {cardimage}
+                    imageAlt = "Description of the Image"
+                    /><Card
+                    cardTitle ="Card Title" 
+                    cardDescription = "This is the card description"
+                    cardImage = {cardimage}
+                    imageAlt = "Description of the Image"
+                    />
+                </div>
             </div>
             <Card2/>
                 

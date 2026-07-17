@@ -1,9 +1,9 @@
 export default function List( {items} ){
     return(
-        <div className="mx-auto max-w-[1152px] text-center">
+        <div className="text-center bg-cyan-100 py-16">
             <ul>
                 {items.map((item , index) => (
-                    <li key={index}>{item}</li>
+                    <li className="mt-4 text-2xl font-bold text-gray-800" key={index}>{item}</li>
                 ))}
             </ul>
         </div>

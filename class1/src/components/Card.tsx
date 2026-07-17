@@ -1,7 +1,7 @@
 export default function Card( {cardTitle, cardDescription, cardImage, imageAlt} ){
     return(
         <>
-            <div className=" bg-gray-100 p-6">
+            <div className="p-6">
                 <div className=" w-full max-w-[300px] py-6 rounded-2xl bg-white shadow-lg">
                     <img src={cardImage} alt={imageAlt} className="h-12 w-12 mx-auto" />
                     <div className="text-center p-2">

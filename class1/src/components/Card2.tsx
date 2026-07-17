@@ -88,7 +88,7 @@ const sculptureList = [{
 function Card2(){
     return(
         <>
-            <div className=" flex flex-wrap gap-4 bg-slate-100">
+            <div className=" flex flex-wrap gap-4 bg-slate-100 py-16">
                 {sculptureList.map((item, index) => (
                     <div className="w-full max-w-[300px] py-6 rounded-2xl bg-white shadow-lg" key={index}>
                         <img className="mx-auto px-2"  src={item.url} alt={item.alt} />
