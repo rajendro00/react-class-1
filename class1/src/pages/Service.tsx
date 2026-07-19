@@ -25,7 +25,7 @@ function About(){
                     >
                         click value {count} time
                     </button>
-                </div>
+            </div>
             <List items={listData} />
             <div className="bg-blue-200 py-12">
                 <div className=" flex flex-wrap justify-center gap-4 ">
