@@ -269,6 +269,7 @@ const [activeTabs2, setActiveTabs2] = useState(tabs2[0])
             </div>
           </div>
           <div>
+            {/* Like Button ❤️ */}
             <button onClick={() => setLiked(!liked)}>
               { liked ? "❤️ Liked" : "🤍 Like"}
             </button>
@@ -277,13 +278,14 @@ const [activeTabs2, setActiveTabs2] = useState(tabs2[0])
           <div className={`mt-12 ${
             isOnColor ? "bg-amber-600" : "bg-white"
           } `}>
+            {/* Image Change */}
             <div className="flex">
               <img src={imgData[currenIndex]} alt="" />
             </div>
             <button onClick={ () => { currenIndex === 0 ? setCurrenIndex(imgData.length -1 ) : setCurrenIndex(currenIndex -1) }} >prev</button>
             <button onClick={ () => {setCurrenIndex((currenIndex + 1) % imgData.length) }} >Next</button>
           </div>
-
+          {/* Dark / Light Mode */}
               <button onClick={ () => setOnColor(!isOnColor)}>Dark Mode</button>
 
         </div>
